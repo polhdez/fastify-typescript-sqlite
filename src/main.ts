@@ -61,7 +61,7 @@ const startServer = async () => {
         server.log.error(`Closed application on ${signal}`);
         process.exit(0);
       } catch (err) {
-        server.log.error(`Error closing application on ${signal}`, err);
+        server.log.error(`Error closing application on ${signal}`);
         process.exit(1);
       }
     });
